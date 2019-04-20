@@ -7,27 +7,45 @@
  */
 public class Food extends Item
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private int weight;
+    private boolean isVegetarian;
 
-    /**
-     * Constructor for objects of class Food
-     */
-    public Food()
-    {
-        // initialise instance variables
-        x = 0;
+    public Food (int id, String name, int price, int stock, int weight, boolean isVegetarian) {
+        super(id, name, price, stock);
+        this.weight = weight;
+        this.isVegetarian = isVegetarian;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param weight the weight to set
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    /**
+     * @param isVegetarian the isVegetarian to set
+     */
+    public void setVegetarian(boolean isVegetarian) {
+        this.isVegetarian = isVegetarian;
+    }
+
+    /**
+     * @return the weight
+     */
+    public int getWeight() {
+        return weight;
+    }
+
+    /**
+     * @return the isVegetarian
+     */
+    public boolean getIsVegetarian() {
+        return isVegetarian;
+    }
+
+    @Override
+    public void printData() {
+        super.printData();
     }
 }

@@ -7,27 +7,29 @@
  */
 public class Accessory extends Item
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private String type;
 
-    /**
-     * Constructor for objects of class Accessory
-     */
-    public Accessory()
-    {
-        // initialise instance variables
-        x = 0;
+    public Accessory (int id, String name, int price, int stock, String type) {
+        super(id, name, price, stock);
+        this.type = type;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param type the type to set
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    /**
+     * @return the type
+     */
+    public String getType() {
+        return type;
+    }
+
+    @Override
+    public void printData() {
+        super.printData();
     }
 }

@@ -1,10 +1,14 @@
 #BlueJ class context
 comment0.target=Accessory
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Accessory\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
-comment1.target=Accessory()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Accessory\r\n
-comment2.params=y
-comment2.target=int\ sampleMethod(int)
-comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
-numComments=3
+comment1.params=id\ name\ price\ stock\ type
+comment1.target=Accessory(int,\ java.lang.String,\ int,\ int,\ java.lang.String)
+comment2.params=type
+comment2.target=void\ setType(java.lang.String)
+comment2.text=\r\n\ @param\ type\ the\ type\ to\ set\r\n
+comment3.params=
+comment3.target=java.lang.String\ getType()
+comment3.text=\r\n\ @return\ the\ type\r\n
+comment4.params=
+comment4.target=void\ printData()
+numComments=5

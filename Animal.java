@@ -7,27 +7,61 @@
  */
 public class Animal extends Item
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private String type;
+    private String food;
+    private int age;
 
-    /**
-     * Constructor for objects of class Animal
-     */
-    public Animal()
-    {
-        // initialise instance variables
-        x = 0;
+    public Animal (int id, String name, int price, int stock, String type, String food, int age) {
+        super(id, name, price, stock);
+        this.type = type;
+        this.food = food;
+        this.age = age;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param type the type to set
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    /**
+     * @param food the food to set
+     */
+    public void setFood(String food) {
+        this.food = food;
+    }
+
+    /**
+     * @param age the age to set
+     */
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    /**
+     * @return the type
+     */
+    public String getType() {
+        return type;
+    }
+
+    /**
+     * @return the food
+     */
+    public String getFood() {
+        return food;
+    }
+
+    /**
+     * @return the age
+     */
+    public int getAge() {
+        return age;
+    }
+
+    @Override
+    public void printData() {
+        super.printData();
     }
 }

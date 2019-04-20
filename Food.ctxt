@@ -1,10 +1,20 @@
 #BlueJ class context
 comment0.target=Food
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Food\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
-comment1.target=Food()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Food\r\n
-comment2.params=y
-comment2.target=int\ sampleMethod(int)
-comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
-numComments=3
+comment1.params=id\ name\ price\ stock\ weight\ isVegetarian
+comment1.target=Food(int,\ java.lang.String,\ int,\ int,\ int,\ boolean)
+comment2.params=weight
+comment2.target=void\ setWeight(int)
+comment2.text=\r\n\ @param\ weight\ the\ weight\ to\ set\r\n
+comment3.params=isVegetarian
+comment3.target=void\ setVegetarian(boolean)
+comment3.text=\r\n\ @param\ isVegetarian\ the\ isVegetarian\ to\ set\r\n
+comment4.params=
+comment4.target=int\ getWeight()
+comment4.text=\r\n\ @return\ the\ weight\r\n
+comment5.params=
+comment5.target=boolean\ getIsVegetarian()
+comment5.text=\r\n\ @return\ the\ isVegetarian\r\n
+comment6.params=
+comment6.target=void\ printData()
+numComments=7
